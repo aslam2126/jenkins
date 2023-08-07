@@ -53,8 +53,8 @@ pipeline {
     }
     stage('Update Deployment File') {
         environment {
-            GIT_REPO_NAME = "jenkins-argocd"
-            GIT_USER_NAME = "ashaik65"
+            GIT_REPO_NAME = "jenkins"
+            GIT_USER_NAME = "aslam2126"
         }
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
